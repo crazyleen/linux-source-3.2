@@ -27,14 +27,14 @@ config FS_MBCACHE
 	default y if EXT4_FS=y && EXT4_FS_XATTR
 	default m if EXT2_FS_XATTR || EXT3_FS_XATTR || EXT4_FS_XATTR
 
-source "fs/reiserfs/Kconfig"
-source "fs/jfs/Kconfig"
+#source "fs/reiserfs/Kconfig"
+#source "fs/jfs/Kconfig"
 
 source "fs/xfs/Kconfig"
-source "fs/gfs2/Kconfig"
-source "fs/ocfs2/Kconfig"
-source "fs/btrfs/Kconfig"
-source "fs/nilfs2/Kconfig"
+#source "fs/gfs2/Kconfig"
+#source "fs/ocfs2/Kconfig"
+#source "fs/btrfs/Kconfig"
+#source "fs/nilfs2/Kconfig"
 
 endif # BLOCK
 
@@ -191,35 +191,35 @@ menuconfig MISC_FILESYSTEMS
 
 if MISC_FILESYSTEMS
 
-source "fs/adfs/Kconfig"
-source "fs/affs/Kconfig"
+#source "fs/adfs/Kconfig"
+#source "fs/affs/Kconfig"
 source "fs/ecryptfs/Kconfig"
-source "fs/hfs/Kconfig"
-source "fs/hfsplus/Kconfig"
-source "fs/befs/Kconfig"
-source "fs/bfs/Kconfig"
-source "fs/efs/Kconfig"
+#source "fs/hfs/Kconfig"
+#source "fs/hfsplus/Kconfig"
+#source "fs/befs/Kconfig"
+#source "fs/bfs/Kconfig"
+#source "fs/efs/Kconfig"
 source "fs/jffs2/Kconfig"
 # UBIFS File system configuration
-source "fs/ubifs/Kconfig"
-source "fs/logfs/Kconfig"
+#source "fs/ubifs/Kconfig"
+#source "fs/logfs/Kconfig"
 source "fs/cramfs/Kconfig"
 source "fs/squashfs/Kconfig"
-source "fs/freevxfs/Kconfig"
-source "fs/minix/Kconfig"
-source "fs/omfs/Kconfig"
-source "fs/hpfs/Kconfig"
-source "fs/qnx4/Kconfig"
+#source "fs/freevxfs/Kconfig"
+#source "fs/minix/Kconfig"
+#source "fs/omfs/Kconfig"
+#source "fs/hpfs/Kconfig"
+#source "fs/qnx4/Kconfig"
 source "fs/romfs/Kconfig"
 source "fs/pstore/Kconfig"
-source "fs/sysv/Kconfig"
+#source "fs/sysv/Kconfig"
 source "fs/ufs/Kconfig"
-source "fs/exofs/Kconfig"
-source "fs/aufs/Kconfig"
+#source "fs/exofs/Kconfig"
+#source "fs/aufs/Kconfig"
 
 endif # MISC_FILESYSTEMS
 
-source "fs/exofs/Kconfig.ore"
+#source "fs/exofs/Kconfig.ore"
 
 menuconfig NETWORK_FILESYSTEMS
 	bool "Network File Systems"
@@ -260,12 +260,12 @@ config NFS_COMMON
 	default y
 
 source "net/sunrpc/Kconfig"
-source "fs/ceph/Kconfig"
+#source "fs/ceph/Kconfig"
 source "fs/cifs/Kconfig"
-source "fs/ncpfs/Kconfig"
-source "fs/coda/Kconfig"
-source "fs/afs/Kconfig"
-source "fs/9p/Kconfig"
+#source "fs/ncpfs/Kconfig"
+#source "fs/coda/Kconfig"
+#source "fs/afs/Kconfig"
+#source "fs/9p/Kconfig"
 
 endif # NETWORK_FILESYSTEMS
 
